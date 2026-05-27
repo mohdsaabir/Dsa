@@ -1,14 +1,10 @@
-def fib(n):
-    if n==0:
-        print(0)
-        return 0
-    elif n==1:
-        print(1)
-        return 1
-    
-    x = fib(n-1)
-    y = fib(n-2)
-    print(x + y)
-    return x + y
+def fibonacci(n):
+    # Base cases: F(0) = 0, F(1) = 1
+    if n <= 1:
+        return n
+  
+    else:
+        return fibonacci(n - 1) + fibonacci(n - 2)
 
-fib(5)
+
+print(fibonacci(4)) 
